@@ -1,0 +1,165 @@
+/* font */
+  @font-face {
+    font-family: 'SofiaProRegularAz';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../font/Sofia/SofiaProRegularAz.otf");
+  }
+
+  @font-face {
+    font-family: 'SofiaProLightAz';
+    font-style: light;
+    font-weight: 100;
+    src: url("../font/Sofia/SofiaProLightAz.otf");
+  }
+
+  @font-face {
+    font-family: 'SofiaProBlackAz';
+    font-style: bold;
+    font-weight: 100;
+    src: url("../font/Sofia/SofiaProBlackAz.otf");
+  }
+/* Theme */
+  :root {
+    --TextColor: #000000;
+    --SubTextColor: #707070;
+  }
+
+  body{
+    min-height: 1200px;
+    font-family: 'sofiaProRegularAz';
+  }
+
+  /* .body1 */
+
+.body1{
+  background-image: url(../image/backgroundBody1.svg);
+    background-size: cover;
+    /* position: absolute; */
+    height: 100vh;
+    left: 0;
+    max-width: 100%;
+}
+
+.b1h2{
+  font-family: 'SofiaProBlackAz';
+  font-size:70px;
+  padding: 140px 0px 0px 60px;
+  line-height: 80px;
+}
+
+.closer{
+  left:-15%;
+}
+
+.b1h4{
+  font-family: 'SofiaProRegularAz';
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--SubTextColor);
+}
+
+.arrowsvg{
+  margin-top: 5%;
+  animation: arrow-anim 7s alternate-reverse infinite linear;
+}
+
+@keyframes arrow-anim {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(50px);
+  }
+}
+
+.arrowsvg:hover{
+  cursor: pointer;
+}
+
+.rectb1size{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 120px;
+  box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transform: scale(1);
+  transition: 1000ms ease-in-out;
+}
+
+.rectb1size:hover, .rectb1size:active{
+  cursor: pointer;
+  transform: scale(1.05); 
+  transition: 1000ms ease-in-out;
+}
+
+.rect1h5{
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.rect1p{
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--SubTextColor);
+}
+
+.rectcol2{
+  margin-top: 150px;
+}
+
+/* body2 */
+.body2{
+  margin-top: 350px;
+  min-height: 900px;
+}
+
+.body2 h2{
+  font-size: 60px;
+}
+
+.servicesSVG{
+  margin-top: -150px;
+}
+
+/* smaller device */
+@media only screen and (max-width: 768px) {
+  .body1{
+    height: auto;
+  }
+
+  .rectb1size{
+    margin-top: 120px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
+
+  .rectcol2{
+    margin-top: 0px;
+  }
+
+  .arrowsvg{
+    /* height: 230px; */
+    /* width: 80px; */
+    /* margin-top: 100px; */
+    margin-left: -25px;
+  }
+
+  .b1h2{
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .closer{
+    left: 0%;
+  }
+
+  .b1h4{
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+
+}
