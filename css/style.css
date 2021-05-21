@@ -75,6 +75,7 @@
 
 .arrowsvg{
   margin-top: 5%;
+  z-index: 1;
   animation: arrow-anim 7s alternate-reverse infinite linear;
 }
 
@@ -299,7 +300,7 @@ input[type='checkbox'], input[type='radio'] { filter: grayscale(1) }
   .b1h2{
     font-size: 30px;
     line-height: 39px;
-    padding: 80px 20px 20px 20px;
+    padding: 120px 20px 20px 20px;
   }
 
   .closer{
@@ -319,10 +320,10 @@ input[type='checkbox'], input[type='radio'] { filter: grayscale(1) }
   }
 
   .center1 {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
-  .center1 {
+  .center2 {
     padding-top: 20px;
   }
 
@@ -360,5 +361,21 @@ input[type='checkbox'], input[type='radio'] { filter: grayscale(1) }
 }
   
 
+}
+
+.affix {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear;  
+}
+
+.navbar { 
+  -webkit-transition:padding 0.2s ease;
+  -moz-transition:padding 0.2s ease; 
+  -o-transition:padding 0.2s ease;        
+  transition:padding 0.2s ease;  
 }
 

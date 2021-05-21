@@ -64,9 +64,11 @@
                       <div class="col-12">
                           <div class="row pt-3 pl-5 arrow">
                               <div class="col-3 arrowsvg">
+                                <a class="nav-link pr-5" href="#arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="80.027" height="165.216" viewBox="0 0 80.027 165.216">
                                     <path id="Path_22" data-name="Path 22" d="M210.125,120.469a6.454,6.454,0,0,0-9.127.022l-22.531,22.64V6.454a6.454,6.454,0,1,0-12.908,0V143.131L143.028,120.49a6.454,6.454,0,0,0-9.149,9.106l33.56,33.722.006.006a6.459,6.459,0,0,0,9.137,0l.006-.006,33.56-33.722A6.454,6.454,0,0,0,210.125,120.469Z" transform="translate(-132)" fill="#4dbbeb"/>
                                 </svg>
+                              </a>
                               </div>
                               <div class="col-9 closer">
                                   <H4 class="b1h4">Customized Software, Animations,IOS & Android Apps 
@@ -168,7 +170,7 @@
                                           
                                     </div>
                                     <div class="col-12 rect1h5 mt-3"><H5>Compliances</H5></div>
-                                    <div class="col-12 rect1p mt-2"><p>KYC, KYB, AML, CTF, MLD,
+                                    <div class="col-12 rect1p mt-2"><p>KYC,<span id="arrow">&nbsp;</span>KYB, AML, CTF, MLD,
                                         EID, FATF, IoT & more
                                         around compliances </p></div>
                                 </div>
@@ -414,8 +416,8 @@
                           </label>
                         </div>
                       </div>
-                      <div class="form-group sendBtnMessageGrp  col-md-6">
-                        <button type="submit" class="btn btn-dark sendBtnMessage float-right">Send Message</button>
+                      <div class="form-group sendBtnMessageGrp col-md-6">
+                        <button type="submit" class="btn btn-dark sendBtnMessage float-right mb-3">Send Message</button>
                       </div>
                     </div>
                     
@@ -433,23 +435,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
-//   $('ul.nav').find('a').click(function(){
-//     var $href = $(this).attr('href');
-//     var $anchor = $('#'+$href).offset();
-//     $('body').animate({ scrollTop: $anchor.top });
-//     return false;
-// });
-
-// var offset = 140;
-
-// $('.navbar li a').click(function(event) {
-//     // event.preventDefault();
-//     $($(this).attr('href'))[0].scrollIntoView();
-//     scrollBy(0,-offset);
-// });
-
-
-
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 
 </script>
   </body>
