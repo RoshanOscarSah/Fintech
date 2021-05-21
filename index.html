@@ -18,10 +18,40 @@
     <link rel="shortcut icon" type="image/png" href="./image/favicon.png"/>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="140">
+
+    <!-- navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navModify">
+      <a class="navbar-brand" href="#"><img src="./image/fintechlogo.png" alt="Fintech Logo" width="auto" height="45px" class="heightForMob img-responsive"></a>
+
+      <button class="btn btn-dark my-2 my-sm-0 d-xs-block d-sm-block d-md-block d-lg-none">LOGIN</button>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse text-align-right" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link pr-5" href="#Home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-5" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-5" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pr-5" href="#Contact">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+      <button class="btn btn-dark my-2 my-sm-0 d-none d-xs-none d-sm-none d-md-none d-lg-block">LOGIN</button>
+    </nav>
 
     <!-- home -->
-      <Section class="container-fluid body1">
+      <Section  id="Home" class="container-fluid body1">
           <div class="row">
               <div class="col-12 col-md-6">
                   <div class="row">
@@ -206,10 +236,12 @@
                                   </div>
                                   <div class="col-12 rect1h5 mt-3"><H5>Digital Solutions</H5></div>
                                   <div class="col-12 rect1p mt-2"><p>SEO, Social media Marketing,
+                                    <span id="Services">&nbsp;</span>
                                     Data Analysis, Content writing,
                                     Creative Design, Medical
                                     Transcriptions etc.
-                                    </p></div>
+                                    </p>
+                                  </div>
                               </div>
                           </div>
                         </div>
@@ -221,7 +253,7 @@
       </Section>
 
       <!-- Our Services -->
-      <Section class="container body2">
+      <Section onclick="offset()" class="container body2">
         <div class="row">
           <div class="col-12"><H2>Our Services</H2></div>
           <div class="col-12">
@@ -255,6 +287,7 @@
                 <path d="M 40.99997711181641 5.579185485839844 C 39.59625625610352 5.579185485839844 38.3207893371582 6.29400634765625 37.58810043334961 7.4913330078125 L 5.509765625 59.91206359863281 C 5.47607421875 59.96723175048828 5.097000122070313 60.60358810424805 4.658065795898438 61.34041976928711 C 2.911972045898438 64.27155303955078 2.069740295410156 65.68539428710938 1.644691467285156 66.38511657714844 C 2.130416870117188 66.66588592529297 3.700027465820313 67.20931243896484 8.572265625 67.20931243896484 C 12.94590759277344 67.20931243896484 18.23748016357422 66.79193115234375 22.10121154785156 66.48717498779297 C 23.97208404541016 66.33960723876953 25.51061630249023 66.21824645996094 26.45644760131836 66.18418884277344 L 34.58639907836914 56.99666595458984 L 34.98768615722656 56.54316711425781 L 35.57551956176758 56.68864440917969 L 47.50887680053711 59.64191055297852 L 47.87277603149414 59.73196411132813 L 48.08779907226563 60.03904342651367 L 52.87209320068359 66.8717041015625 L 77.94521331787109 66.03928375244141 L 77.96178436279297 66.03873443603516 L 77.97838592529297 66.03873443603516 C 78.49871826171875 66.03873443603516 78.87836456298828 65.93809509277344 78.96914672851563 65.77610778808594 C 79.01548767089844 65.69342041015625 79.2122802734375 65.20125579833984 78.53365325927734 63.6280517578125 C 78.02549743652344 62.45003128051758 77.21245574951172 61.09228515625 76.49026489257813 59.91213226318359 L 44.41184234619141 7.491317749023438 C 43.67915344238281 6.293998718261719 42.4036865234375 5.579185485839844 40.99997711181641 5.579185485839844 M 40.99997711181641 4.579185485839844 C 42.64484405517578 4.579185485839844 44.28971099853516 5.375907897949219 45.26480865478516 6.969352722167969 L 77.34323120117188 59.39016723632813 C 79.38203430175781 62.72186279296875 81.88438415527344 67.03873443603516 77.97838592529297 67.03873443603516 L 52.36372375488281 67.88912963867188 L 47.26864242553711 60.61262130737305 L 35.33528900146484 57.65935516357422 L 26.91530990600586 67.17462921142578 C 24.67499542236328 67.17462921142578 15.49562072753906 68.20931243896484 8.572265625 68.20931243896484 C 4.149688720703125 68.20931243896484 0.6479110717773438 67.78746795654297 0.462890625 66.40374755859375 C 0.5104446411132813 66.35882568359375 4.535743713378906 59.58791732788086 4.656753540039063 59.39017486572266 L 36.73513412475586 6.969367980957031 C 37.71023178100586 5.37591552734375 39.35510635375977 4.579185485839844 40.99997711181641 4.579185485839844 Z M 0.4627685546875 66.40280151367188 C 0.4627914428710938 66.40301513671875 0.4628677368164063 66.40353393554688 0.462890625 66.40374755859375 C 0.462738037109375 66.40390014648438 0.462615966796875 66.40397644042969 0.4625473022460938 66.40397644042969 C 0.4623870849609375 66.40397644042969 0.46246337890625 66.40358734130859 0.4627685546875 66.40280151367188 Z" stroke="none" fill="#707070"/>
               </g>
             </svg>
+            <span id="Portfolio">&nbsp;</span>
             
             
           </div>
@@ -275,12 +308,13 @@
             <div class="PortfolioBG">
               <img src="./image/ipayremmitlogo.png" height="auto" width="375px" class="img-responsive center2" alt="fintech logo"/>
             </div>
+            <span id="Contact">&nbsp;</span>
           </div>
         </div>
       </Section>   
 
       <!--  Footer -->
-      <Section class="container-fluid body4">
+      <Section id="" class="container-fluid body4">
         <div class="row">
               <div class="col-12 col-md-5 contactusbg">
                 <H2>Contact Us</H2>
@@ -395,5 +429,28 @@
 
 
 
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+//   $('ul.nav').find('a').click(function(){
+//     var $href = $(this).attr('href');
+//     var $anchor = $('#'+$href).offset();
+//     $('body').animate({ scrollTop: $anchor.top });
+//     return false;
+// });
+
+// var offset = 140;
+
+// $('.navbar li a').click(function(event) {
+//     // event.preventDefault();
+//     $($(this).attr('href'))[0].scrollIntoView();
+//     scrollBy(0,-offset);
+// });
+
+
+
+
+</script>
   </body>
 </html>
